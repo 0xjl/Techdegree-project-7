@@ -2,6 +2,20 @@
            BODY
 -------------------------*/
 
+body {
+  font-family: "Montserrat", sans-serif;
+  font: 1em;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 0.75em;
+  font-weight: 200;
+}
+
 /*------------------------
            HEADER
 -------------------------*/
@@ -12,6 +26,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  grid-area: header;
 }
 
 header h1 {
@@ -29,13 +44,42 @@ header img {
 }
 
 /*------------------------
-        ANIMATIONS
+        NAV/SIDENAV
 -------------------------*/
 
+nav {
+  background-color: #4d4c72;
+  fill: white;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: nav;
+}
+
+nav svg {
+  padding: 5px 1em;
+  width: 30px;
+}
+
 /*------------------------
-           SVG
+        ANIMATIONS
 -------------------------*/
 
 /*------------------------
         MEDIA QUERIES
 -------------------------*/
+@media (min-width: 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header header"
+      "nav main";
+  }
+  nav {
+    height: 100vh;
+    width: 60px;
+  }
+}
