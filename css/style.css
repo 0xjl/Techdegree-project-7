@@ -11,6 +11,11 @@ h1 {
   font-weight: 300;
 }
 
+h2 {
+  font-size: 1em;
+  padding: 0.5em;
+}
+
 h3 {
   font-size: 0.75em;
   font-weight: 200;
@@ -30,10 +35,13 @@ header {
 }
 
 header h1 {
+  padding: 0.5em;
+  font-size: 1em;
   flex: 1;
 }
 
 .bell-container {
+  fill: white;
   width: 25px;
 }
 
@@ -49,8 +57,7 @@ header img {
 
 nav {
   background-color: #4d4c72;
-  fill: white;
-  padding: 5px;
+  padding: calc();
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,8 +65,36 @@ nav {
 }
 
 nav svg {
-  padding: 5px 1em;
+  fill: white;
+  padding: 5px 1em 2px 1em;
   width: 30px;
+}
+
+/*------------------------
+          MAIN
+-------------------------*/
+
+.main-header {
+  width: 100%;
+  display: flex;
+}
+
+.greybox {
+  flex: 1;
+  box-shadow: 0 0 2px 0 rgb(34 34 34 / 51%);
+}
+
+.alert {
+  font-weight: 300;
+  width: calc(90% - 10px);
+  margin: 0 auto;
+  padding: 7.5px;
+  margin-top: 1em;
+  border-radius: 5px;
+  background-color: #7477bf;
+  color: white;
+  display: flex;
+  justify-content: space-between;
 }
 
 /*------------------------
@@ -70,9 +105,13 @@ nav svg {
         MEDIA QUERIES
 -------------------------*/
 @media (min-width: 768px) {
+  nav {
+    flex-direction: column;
+    justify-content: start;
+  }
   .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 60px 1fr;
     grid-template-rows: auto;
     grid-template-areas:
       "header header"
