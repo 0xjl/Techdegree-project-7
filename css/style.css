@@ -1,0 +1,41 @@
+/*------------------------
+           BODY
+-------------------------*/
+
+/*------------------------
+           HEADER
+-------------------------*/
+
+header {
+  background-color: #7477bf;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header h1 {
+  flex: 1;
+}
+
+.bell-container {
+  width: 25px;
+}
+
+header img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+/*------------------------
+        ANIMATIONS
+-------------------------*/
+
+/*------------------------
+           SVG
+-------------------------*/
+
+/*------------------------
+        MEDIA QUERIES
+-------------------------*/
