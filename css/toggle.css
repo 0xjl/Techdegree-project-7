@@ -655,11 +655,11 @@
 @media only screen and (-webkit-max-device-pixel-ratio: 2) and (max-device-width: 80em) {
   .switch-light,
   .switch-toggle {
-    -webkit-animation: webkitSiblingBugfix infinite 1s;
+    animation: webkitSiblingBugfix infinite 1s;
   }
 }
 
-@-webkit-keyframes webkitSiblingBugfix {
+@keyframes webkitSiblingBugfix {
   from {
     -webkit-transform: translate3d(0, 0, 0);
   }

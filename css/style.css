@@ -96,8 +96,11 @@ nav svg {
   justify-content: space-between;
 }
 
+.toggle {
+  padding: 1em 0 0 0.75em;
+}
+
 .toggle h2 {
-  padding-top: 1.25em;
   margin: 0;
 }
 
@@ -111,6 +114,10 @@ fieldset {
   border: 0;
 }
 
+.line {
+  height: 150px;
+}
+
 /*------------------------
         ANIMATIONS
 -------------------------*/
@@ -119,8 +126,13 @@ fieldset {
         MEDIA QUERIES
 -------------------------*/
 @media (min-width: 768px) {
+  .line {
+    padding: 7px;
+    height: 300px;
+  }
   .toggle {
     display: flex;
+    justify-content: space-between;
   }
   nav {
     flex-direction: column;
@@ -138,4 +150,7 @@ fieldset {
     height: 100vh;
     width: 60px;
   }
+}
+
+@media (min-width: 1024px) {
 }

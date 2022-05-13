@@ -70,28 +70,31 @@
             Alert: You have unread messages
             <span class="close">x</span>
         </section>
-        <section>
-            <section class="toggle">
-                <h2>TRAFFIC</h2>
-                <fieldset>
-                    <div class="switch-toggle switch-ios">
-                        <input id="week" name="view" type="radio" checked>
-                        <label for="week" onclick="">Week</label>
-                        <input id="month" name="view" type="radio">
-                        <label for="month" onclick="">Month</label>
-                        <input id="day" name="view" type="radio">
-                        <label for="day" onclick="">Day</label>
-                        <a></a>
-                    </div>
-                </fieldset>
-            </section>
+        <section class="toggle">
+            <h2>TRAFFIC</h2>
+            <fieldset>
+                <div class="switch-toggle switch-ios">
+                    <input id="week" name="view" type="radio" checked>
+                    <label for="week" onclick="">Week</label>
+                    <input id="month" name="view" type="radio">
+                    <label for="month" onclick="">Month</label>
+                    <input id="day" name="view" type="radio">
+                    <label for="day" onclick="">Day</label>
+                    <a></a>
+                </div>
+            </fieldset>
         </section>
         <section class="line">
-            <div>
+            <div class="line">
                 <canvas id="line"></canvas>
             </div>
         </section>
-
+        <section class="bar">
+            <canvas id="bar"></canvas>
+        </section>
+        <section class="doughnut">
+            <canvas id="doughnut"></canvas>
+        </section>
     </main>
 
 
