@@ -57,7 +57,6 @@ header img {
 
 nav {
   background-color: #4d4c72;
-  padding: calc();
   display: flex;
   align-items: center;
   justify-content: center;
@@ -97,6 +96,21 @@ nav svg {
   justify-content: space-between;
 }
 
+.toggle h2 {
+  padding-top: 1.25em;
+  margin: 0;
+}
+
+legend {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+fieldset {
+  padding: 0;
+  border: 0;
+}
+
 /*------------------------
         ANIMATIONS
 -------------------------*/
@@ -105,13 +119,16 @@ nav svg {
         MEDIA QUERIES
 -------------------------*/
 @media (min-width: 768px) {
+  .toggle {
+    display: flex;
+  }
   nav {
     flex-direction: column;
     justify-content: start;
   }
   .grid-container {
     display: grid;
-    grid-template-columns: 60px 1fr;
+    grid-template-columns: 70px 1fr;
     grid-template-rows: auto;
     grid-template-areas:
       "header header"

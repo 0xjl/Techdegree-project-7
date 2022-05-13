@@ -1,14 +1,15 @@
 const closeButton = document.querySelector(".close");
 const alert = document.querySelector(".alert");
-const ctx = document.getElementById("myChart").getContext("2d");
+const line = document.getElementById("line").getContext("2d");
 
+/* ALERT NOTIFICATION */
 closeButton.addEventListener("click", () => {
   alert.style.visibility = "hidden";
   alert.style.display = "none";
 });
 
 /* CHART ONE */
-const myChart = new Chart(ctx, {
+const myChart = new Chart(line, {
   type: "line",
   data: {
     labels: ["Q1", "Q2", "Q3", "Q4"],
