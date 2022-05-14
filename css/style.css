@@ -16,7 +16,7 @@ h2 {
   padding: 0.5em;
 }
 
-h3 {
+h4 {
   font-size: 0.75em;
   font-weight: 200;
 }
@@ -132,7 +132,7 @@ fieldset {
 }
 
 .social-container {
-  width: calc(100vw - 20px);
+  width: calc(90% - 5px);
   margin: 10px auto;
   justify-content: space-evenly;
   background-color: rgba(129, 119, 119, 0.05);
@@ -167,13 +167,11 @@ fieldset {
   .grid-container {
     display: grid;
     grid-template-columns: 70px 1fr;
-    grid-template-rows: auto;
     grid-template-areas:
       "header header"
       "nav main";
   }
   nav {
-    height: 100vh;
     width: 60px;
   }
 }

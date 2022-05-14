@@ -26,19 +26,6 @@ const lineChart = new Chart(line, {
     ],
   },
   options: {
-    scales: {
-      yAxes: [
-        {
-          display: true,
-          ticks: {
-            beginAtZero: true,
-            steps: 5,
-            stepValue: 10,
-            max: 100,
-          },
-        },
-      ],
-    },
     maintainAspectRatio: false,
     plugins: {
       legend: {
@@ -64,19 +51,6 @@ const barChart = new Chart(bar, {
     ],
   },
   options: {
-    scales: {
-      yAxes: [
-        {
-          display: true,
-          ticks: {
-            beginAtZero: true,
-            steps: 5,
-            stepValue: 10,
-            max: 100,
-          },
-        },
-      ],
-    },
     maintainAspectRatio: false,
     plugins: {
       legend: {
@@ -102,19 +76,6 @@ const doughnutChart = new Chart(doughnut, {
     ],
   },
   options: {
-    scales: {
-      yAxes: [
-        {
-          display: true,
-          ticks: {
-            beginAtZero: true,
-            steps: 5,
-            stepValue: 10,
-            max: 100,
-          },
-        },
-      ],
-    },
     maintainAspectRatio: false,
     plugins: {
       legend: {
