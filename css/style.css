@@ -96,10 +96,6 @@ nav svg {
   justify-content: space-between;
 }
 
-.toggle {
-  padding: 1em 0 0 0.75em;
-}
-
 .toggle h2 {
   margin: 0;
 }
@@ -114,8 +110,38 @@ fieldset {
   border: 0;
 }
 
-.line {
+/* CHART SECTION */
+
+.line,
+.bar,
+.doughnut {
   height: 150px;
+  padding: 5px;
+}
+
+/* SOCIAL STATS SECTION */
+
+.social-section,
+.social-container,
+.social-image {
+  display: flex;
+}
+
+.social-section {
+  flex-direction: column;
+}
+
+.social-container {
+  width: calc(100vw - 20px);
+  margin: 10px auto;
+  justify-content: space-evenly;
+  background-color: rgba(129, 119, 119, 0.05);
+  box-shadow: 0 0 2px 0 rgba(24, 24, 24, 0.51);
+}
+
+.social-image {
+  fill: #7477bf;
+  width: 60px;
 }
 
 /*------------------------
