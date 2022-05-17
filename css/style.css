@@ -52,7 +52,6 @@ header h1 {
   width: 25px;
   padding-right: 0.5em;
   margin-right: 0.5em;
-  border-right: 1px solid rgba(160, 162, 191, 0.2);
 }
 
 header img {
@@ -90,7 +89,10 @@ nav svg {
 
 .greybox {
   flex: 1;
-  box-shadow: 0 0 2px 0 rgb(34 34 34 / 51%);
+}
+
+.greybox {
+  box-shadow: -2px 2px 2px -2px grey;
 }
 
 .alert {
@@ -124,7 +126,6 @@ fieldset {
 .doughnut {
   height: 150px;
   padding: 1em;
-  border-bottom: 1px solid rgba(196, 196, 196, 0.61);
 }
 
 /*------------------------
@@ -152,6 +153,15 @@ fieldset {
 .social-image {
   fill: #7477bf;
   width: 60px;
+}
+
+.social-section,
+.line,
+.bar,
+.doughnut,
+.member-container,
+.message {
+  box-shadow: 0 2px 2px -2px gray;
 }
 
 /*------------------------
