@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
     <link rel="stylesheet" href="css/toggle.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -70,34 +71,37 @@
             Alert: You have unread messages
             <span class="close">x</span>
         </div>
-        <section class="toggle-container">
-            <h3>TRAFFIC</h3>
-            <fieldset class="toggle">
-                <div class="switch-toggle switch-ios">
-                    <input id="hourly" name="view" type="radio">
-                    <label for="hourly" onclick="">Hourly</label>
-                    <input id="day" name="view" type="radio">
-                    <label for="day" onclick="">Day</label>
-                    <input id="week" name="view" type="radio" checked>
-                    <label for="week" onclick="">Week</label>
-                    <input id="month" name="view" type="radio">
-                    <label for="month" onclick="">Month</label>
-                    <a></a>
-                </div>
-            </fieldset>
-        </section>
         <section class="chart-container">
+            <div class="toggle-container">
+                <h3>TRAFFIC</h3>
+                <fieldset class="toggle">
+                    <div class="switch-toggle switch-ios">
+                        <input id="hourly" name="view" type="radio">
+                        <label for="hourly" onclick="">Hourly</label>
+                        <input id="day" name="view" type="radio">
+                        <label for="day" onclick="">Day</label>
+                        <input id="week" name="view" type="radio" checked>
+                        <label for="week" onclick="">Week</label>
+                        <input id="month" name="view" type="radio">
+                        <label for="month" onclick="">Month</label>
+                        <a></a>
+                    </div>
+                </fieldset>
+            </div>
             <div class="line">
                 <canvas id="line"></canvas>
             </div>
+            <h3>DAILY TRAFFIC</h3>
             <div class="bar">
                 <canvas id="bar"></canvas>
             </div>
+            <h3>MOBILE USERS</h3>
             <div class="doughnut">
                 <canvas id="doughnut"></canvas>
             </div>
         </section>
         <section class="social-section">
+            <h3>SOCIAL STATS</h3>
             <div class="social-container">
                 <div class="social-image">
                     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -144,7 +148,7 @@
                         <p>Victoria Chambers</p>
                         <a href="#">victoria.chambers80@example.com</a>
                     </div>
-                    <p>10/15/15</p>
+                    <p>10/15/20</p>
                 </div>
                 <div class="member-container">
                     <img src="images/member-2.jpg" class="profile-image">
@@ -152,7 +156,7 @@
                         <p>Victoria Chambers</p>
                         <a href="#">victoria.chambers80@example.com</a>
                     </div>
-                    <p>10/15/15</p>
+                    <p>10/15/20</p>
                 </div>
                 <div class="member-container">
                     <img src="images/member-3.jpg" class="profile-image">
@@ -160,7 +164,7 @@
                         <p>Victoria Chambers</p>
                         <a href="">victoria.chambers80@example.com</a>
                     </div>
-                    <p>10/15/15</p>
+                    <p>10/15/20</p>
                 </div>
                 <div class="member-container">
                     <img src="images/member-4.jpg" class="profile-image">
@@ -168,7 +172,7 @@
                         <p>Victoria Chambers</p>
                         <a href="#">victoria.chambers80@example.com</a>
                     </div>
-                    <p>10/15/15</p>
+                    <p>10/15/20</p>
                 </div>
             </section>
             <section class="activity">

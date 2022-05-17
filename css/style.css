@@ -3,8 +3,8 @@
 -------------------------*/
 
 body {
-  font-family: "Montserrat", sans-serif;
-  font: 1em;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
 }
 
 h1 {
@@ -12,7 +12,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.1em;
+  font-size: 1em;
   margin: 0;
   padding: 1em;
 }
@@ -75,7 +75,7 @@ nav {
 
 nav svg {
   fill: white;
-  padding: 10px 1em 5px 1em;
+  padding: 10px 15px 5px 15px;
   width: 30px;
 }
 
@@ -157,11 +157,10 @@ fieldset {
 /*------------------------
         MEMBERS
 -------------------------*/
-
-a:link,
-a:visited,
-a:hover,
-a:active {
+.member-container a:link,
+.member-container a:visited,
+.member-container a:hover,
+.member-container a:active {
   text-decoration: none;
 }
 
