@@ -12,8 +12,15 @@ h1 {
 }
 
 h2 {
+  font-size: 1.1em;
+  margin: 0;
+  padding: 1em;
+}
+
+h3 {
   font-size: 1em;
-  padding: 0.5em;
+  margin: 0;
+  padding: 1em 0 0 1em;
 }
 
 h4 {
@@ -43,6 +50,9 @@ header h1 {
 .bell-container {
   fill: white;
   width: 25px;
+  padding-right: 0.5em;
+  margin-right: 0.5em;
+  border-right: 1px solid rgba(160, 162, 191, 0.2);
 }
 
 header img {
@@ -65,7 +75,7 @@ nav {
 
 nav svg {
   fill: white;
-  padding: 5px 1em 2px 1em;
+  padding: 10px 1em 5px 1em;
   width: 30px;
 }
 
@@ -96,30 +106,30 @@ nav svg {
   justify-content: space-between;
 }
 
-.toggle h2 {
-  margin: 0;
-}
-
-legend {
-  font-size: 1em;
-  font-weight: bold;
-}
-
 fieldset {
   padding: 0;
   border: 0;
 }
 
-/* CHART SECTION */
+.toggle {
+  padding: 0 1em;
+}
+
+/*------------------------
+      CHART SECTION
+-------------------------*/
 
 .line,
 .bar,
 .doughnut {
   height: 150px;
-  padding: 5px;
+  padding: 1em;
+  border-bottom: 1px solid rgba(196, 196, 196, 0.61);
 }
 
-/* SOCIAL STATS SECTION */
+/*------------------------
+       SOCIAL STATS
+-------------------------*/
 
 .social-section,
 .social-container,
@@ -145,6 +155,66 @@ fieldset {
 }
 
 /*------------------------
+        MEMBERS
+-------------------------*/
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+.member-activity {
+  display: flex;
+  flex-direction: column;
+}
+
+.member-activity p {
+  margin: 0;
+}
+
+.member-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.profile-image {
+  width: 60px;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.members-text p {
+  margin: 0;
+  text-align: center;
+}
+
+/*------------------------
+        MESSAGE FORM
+-------------------------*/
+
+.message-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: calc(95% - 10px);
+}
+
+.message-form * {
+  padding: 1em;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.form-area {
+  padding-bottom: 5em;
+}
+
+/*------------------------
         ANIMATIONS
 -------------------------*/
 
@@ -152,11 +222,15 @@ fieldset {
         MEDIA QUERIES
 -------------------------*/
 @media (min-width: 768px) {
+  .newMembers,
+  .activity {
+    flex: 50%;
+  }
   .line {
     padding: 7px;
     height: 300px;
   }
-  .toggle {
+  .toggle-container {
     display: flex;
     justify-content: space-between;
   }

@@ -70,16 +70,18 @@
             Alert: You have unread messages
             <span class="close">x</span>
         </div>
-        <section class="toggle">
-            <h2>TRAFFIC</h2>
-            <fieldset>
+        <section class="toggle-container">
+            <h3>TRAFFIC</h3>
+            <fieldset class="toggle">
                 <div class="switch-toggle switch-ios">
+                    <input id="hourly" name="view" type="radio">
+                    <label for="hourly" onclick="">Hourly</label>
+                    <input id="day" name="view" type="radio">
+                    <label for="day" onclick="">Day</label>
                     <input id="week" name="view" type="radio" checked>
                     <label for="week" onclick="">Week</label>
                     <input id="month" name="view" type="radio">
                     <label for="month" onclick="">Month</label>
-                    <input id="day" name="view" type="radio">
-                    <label for="day" onclick="">Day</label>
                     <a></a>
                 </div>
             </fieldset>
@@ -133,91 +135,79 @@
                 </div>
             </div>
         </section>
-        <section class="members">
-            <h2>New Members</h2>
-            <div class="members-container">
-                <img src="" class="profile-image">
-
-                <div class="members-text">
-                    <p>Victoria Chambers</p>
-                    <a href="#">victoria.chambers80@example.com</a>
+        <section class="member-activity">
+            <section class="newMembers">
+                <h3>New Members</h3>
+                <div class="member-container">
+                    <img src="images/member-1.jpg" class="profile-image">
+                    <div class="members-text">
+                        <p>Victoria Chambers</p>
+                        <a href="#">victoria.chambers80@example.com</a>
+                    </div>
+                    <p>10/15/15</p>
                 </div>
-                <p>10/15/15</p>
-            </div>
-            <div class="members-container">
-                <img src="" class="profile-image">
-
-                <div class="members-text">
-                    <p>Victoria Chambers</p>
-                    <a href="#">victoria.chambers80@example.com</a>
+                <div class="member-container">
+                    <img src="images/member-2.jpg" class="profile-image">
+                    <div class="members-text">
+                        <p>Victoria Chambers</p>
+                        <a href="#">victoria.chambers80@example.com</a>
+                    </div>
+                    <p>10/15/15</p>
                 </div>
-                <p>10/15/15</p>
-            </div>
-            <div class="members-container">
-                <img src="" class="profile-image">
-
-                <div class="members-text">
-                    <p>Victoria Chambers</p>
-                    <a href="#">victoria.chambers80@example.com</a>
+                <div class="member-container">
+                    <img src="images/member-3.jpg" class="profile-image">
+                    <div class="members-text">
+                        <p>Victoria Chambers</p>
+                        <a href="">victoria.chambers80@example.com</a>
+                    </div>
+                    <p>10/15/15</p>
                 </div>
-                <p>10/15/15</p>
-            </div>
-            <div class="members-container">
-                <img src="" class="profile-image">
-
-                <div class="members-text">
-                    <p>Victoria Chambers</p>
-                    <a href="#">victoria.chambers80@example.com</a>
+                <div class="member-container">
+                    <img src="images/member-4.jpg" class="profile-image">
+                    <div class="members-text">
+                        <p>Victoria Chambers</p>
+                        <a href="#">victoria.chambers80@example.com</a>
+                    </div>
+                    <p>10/15/15</p>
                 </div>
-                <p>10/15/15</p>
-            </div>
-        </section>
-        <section class="activity">
-            <h2>RECENT ACTIVITY</h2>
-            <div class="activity-container">
-                <img src="images/Sept2018Profile.jpg" class="profile-image">
-
-                <div class="activity-text">
-                    <p>Victoria Chambers</p>
-                    <a href="#">victoria.chambers80@example.com</a>
+            </section>
+            <section class="activity">
+                <h3>RECENT ACTIVITY</h3>
+                <div class="member-container">
+                    <img src="images/member-1.jpg" class="profile-image">
+                    <div class="members-text">
+                        <p>Victoria Chambers commented on WebApp's SEO Tips</p>
+                    </div>
+                    <p>4 hours ago</p>
                 </div>
-                <p>10/15/15</p>
-            </div>
-            <div class="activity-container">
-                <img src="images/Sept2018Profile.jpg" class="profile-image">
-
-                <div class="activity-text">
-                    <p>Victoria Chambers</p>
-                    <a href="#">victoria.chambers80@example.com</a>
+                <div class="member-container">
+                    <img src="images/member-2.jpg" class="profile-image">
+                    <div class="members-text">
+                        <p>Victoria Chambers commented on WebApp's SEO Tips</p>
+                    </div>
+                    <p>5 hours ago</p>
                 </div>
-                <p>10/15/15</p>
-            </div>
-            <div class="activity-container">
-                <img src="images/Sept2018Profile.jpg" class="profile-image">
-
-                <div class="activity-text">
-                    <p>Victoria Chambers</p>
-                    <a href="#">victoria.chambers80@example.com</a>
+                <div class="member-container">
+                    <img src="images/member-3.jpg" class="profile-image">
+                    <div class="members-text">
+                        <p>Victoria Chambers commented on WebApp's SEO Tips</p>
+                    </div>
+                    <p>5 hours ago</p>
                 </div>
-                <p>10/15/15</p>
-            </div>
-            <div class="activity-container">
-                <img src="images/Sept2018Profile.jpg" class="profile-image">
-
-                <div class="activity-text">
-                    <p>Victoria Chambers</p>
-                    <a href="#">victoria.chambers80@example.com</a>
+                <div class="member-container">
+                    <img src="images/member-4.jpg" class="profile-image">
+                    <div class="members-text">
+                        <p>Victoria Chambers commented on WebApp's SEO Tips</p>
+                    </div>
+                    <p>1 day ago</p>
                 </div>
-                <p>10/15/15</p>
-            </div>
+            </section>
         </section>
         <section class="message">
             <h3>Message User</h3>
-            <form class="widget-container">
+            <form class="message-form">
                 <input type="text" placeholder="Search for user" class="form-field" id="userField">
-
                 <textarea placeholder="Message for user" class="form-area" id="messageField"></textarea>
-
                 <button class="button-primary" id="send">Send</button>
             </form>
         </section>
