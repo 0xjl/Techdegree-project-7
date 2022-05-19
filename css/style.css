@@ -99,7 +99,7 @@ nav svg {
   font-weight: 300;
   width: calc(90% - 10px);
   margin: 0 auto;
-  padding: 7.5px;
+  padding: 7px;
   margin-top: 1em;
   border-radius: 5px;
   background-color: #7477bf;
@@ -121,9 +121,8 @@ fieldset {
       CHART SECTION
 -------------------------*/
 
-.line,
-.bar,
-.doughnut {
+.widget-container-full,
+.widget-container-half {
   height: 150px;
   padding: 1em;
 }
@@ -156,9 +155,8 @@ fieldset {
 }
 
 .social-section,
-.line,
-.bar,
-.doughnut,
+.widget-container-full,
+.widget-container-half,
 .member-container,
 .message {
   box-shadow: 0 2px 2px -2px gray;
@@ -214,13 +212,45 @@ fieldset {
 }
 
 .message-form * {
+  font-weight: 300;
   padding: 1em;
   margin: 5px;
   border-radius: 10px;
+  box-shadow: none;
+  border: 1px solid rgba(110, 110, 110, 0.089);
 }
 
 .form-area {
   padding-bottom: 5em;
+}
+
+.form-area,
+.form-field {
+  background-color: rgba(175, 175, 175, 0.205);
+}
+
+.button-primary {
+  background-color: #7477bf;
+  color: white;
+  border: none;
+}
+
+.notif-container {
+  display: flex;
+  flex-direction: row;
+}
+
+/*------------------------
+        MESSAGE FORM
+-------------------------*/
+.settings label {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.settings span {
+  width: 30%;
 }
 
 /*------------------------
@@ -235,12 +265,9 @@ fieldset {
   .activity {
     flex: 50%;
   }
-  .line {
-    padding: 7px;
-    height: 300px;
-  }
-  .toggle-container {
+  .traffic {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
   }
   nav {

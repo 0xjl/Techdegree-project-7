@@ -63,16 +63,20 @@
     </nav>
 
     <main>
+
         <div class="main-header">
             <h2>Dashboard</h2>
             <div class="greybox"></div>
         </div>
+
         <div class="alert">
             Alert: You have unread messages
             <span class="close">x</span>
         </div>
-        <section class="chart-container">
-            <div class="toggle-container">
+
+        <!-- start chart section -->
+        <section class="traffic">
+            <div class="traffic-header">
                 <h3>TRAFFIC</h3>
                 <fieldset class="toggle">
                     <div class="switch-toggle switch-ios">
@@ -88,18 +92,24 @@
                     </div>
                 </fieldset>
             </div>
-            <div class="line">
+            <div class="widget-container-full">
                 <canvas id="line"></canvas>
             </div>
+        </section>
+        <section class="daily">
             <h3>DAILY TRAFFIC</h3>
-            <div class="bar">
+            <div class="widget-container-half">
                 <canvas id="bar"></canvas>
             </div>
+        </section>
+        <section class="mobile">
             <h3>MOBILE USERS</h3>
-            <div class="doughnut">
+            <div class="widget-container-half">
                 <canvas id="doughnut"></canvas>
             </div>
         </section>
+        <!-- end chart section -->
+
         <section class="social-section">
             <h3>SOCIAL STATS</h3>
             <div class="social-container">
@@ -217,7 +227,18 @@
         </section>
         <section class="settings">
             <h3>Settings</h3>
-            <!-- custom CSS toggle code-->
+
+            <label class="switch-light switch-ios" onclick="">
+                <input type="checkbox">
+                <strong>
+                    Wireless
+                </strong>
+                <span>
+                    <span>Off</span>
+                    <span>On</span>
+                    <a></a>
+                </span>
+            </label>
             <!-- custom CSS toggle code-->
             <select class="form-field" id="timezone">
                 <option disabled selected>Select a Timezone</option>
@@ -229,7 +250,9 @@
                 <button class="button-disabled" id="cancel">Cancel</button>
             </div>
         </section>
+
     </main>
+
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

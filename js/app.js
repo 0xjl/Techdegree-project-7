@@ -10,7 +10,7 @@ closeButton.addEventListener("click", () => {
   alert.style.display = "none";
 });
 
-/* CHART ONE */
+/* traffic */
 const lineChart = new Chart(line, {
   type: "line",
   data: {
