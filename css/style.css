@@ -144,14 +144,29 @@ fieldset {
 .social-container {
   width: calc(90% - 5px);
   margin: 10px auto;
-  justify-content: space-evenly;
   background-color: rgba(129, 119, 119, 0.05);
   box-shadow: 0 0 2px 0 rgba(24, 24, 24, 0.51);
 }
 
 .social-image {
   fill: #7477bf;
-  width: 60px;
+  width: 30px;
+  height: 30px;
+}
+
+.social-text p {
+  margin: 0;
+  padding: 0;
+}
+
+.social-text p:nth-child(1) {
+  color: #7477bf;
+  padding-top: 1em;
+}
+
+.social-text p:nth-child(2) {
+  font-size: 2em;
+  color: grey;
 }
 
 .social-section,
@@ -235,22 +250,45 @@ fieldset {
   border: none;
 }
 
-.notif-container {
-  display: flex;
-  flex-direction: row;
-}
-
 /*------------------------
         MESSAGE FORM
 -------------------------*/
-.settings label {
+
+.settings {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  flex-direction: column;
 }
 
-.settings span {
-  width: 30%;
+.notification-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+}
+
+.notification-wrapper label {
+  flex: 1;
+}
+
+.notification-wrapper p {
+  flex: 2;
+}
+
+.settings .form-field {
+  border-radius: 5px;
+  padding: 1em;
+  margin: 0 1em;
+}
+
+.settings-button {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.settings-button * {
+  border-radius: 5px;
+  padding: 1em;
+  margin: 1em;
+  flex: 1;
 }
 
 /*------------------------
