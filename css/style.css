@@ -3,6 +3,8 @@
 -------------------------*/
 
 body {
+  max-width: 1440px;
+  margin: 0 auto;
   font-family: "Roboto", sans-serif;
   font-size: 1em;
 }
@@ -24,6 +26,7 @@ h3 {
 }
 
 h4 {
+  padding: 0 1em;
   font-size: 0.75em;
   font-weight: 200;
 }
@@ -52,11 +55,12 @@ header h1 {
   width: 25px;
   padding-right: 0.5em;
   margin-right: 0.5em;
+  border-right: rgba(211, 211, 211, 0.3) solid 1px;
 }
 
 header img {
-  height: 40px;
-  width: 40px;
+  height: 35px;
+  width: 35px;
   border-radius: 50%;
 }
 
@@ -89,14 +93,13 @@ nav svg:hover {
 .main-header {
   width: 100%;
   display: flex;
+  grid-column: 1 / span 2;
 }
 
 .greybox {
   flex: 1;
-}
-
-.greybox {
-  box-shadow: -2px 2px 2px -2px grey;
+  border-bottom: lightgrey solid 1px;
+  border-left: lightgrey solid 1px;
 }
 
 .alert {
@@ -113,12 +116,12 @@ nav svg:hover {
 }
 
 fieldset {
-  padding: 0;
   border: 0;
 }
 
-.toggle {
-  padding: 0 1em;
+.toggle label {
+  padding: 1em;
+  margin-top: 2px;
 }
 
 /*------------------------
@@ -148,8 +151,10 @@ fieldset {
 .social-container {
   width: calc(90% - 5px);
   margin: 0 auto;
-  background-color: rgba(129, 119, 119, 0.05);
-  box-shadow: 0 0 2px 0 rgba(24, 24, 24, 0.51);
+  border: lightgrey solid 1px;
+  background-color: rgba(211, 211, 211, 0.404);
+  border-radius: 5px;
+  margin: 1em;
 }
 
 .circle {
@@ -184,12 +189,27 @@ fieldset {
   color: grey;
 }
 
+.member-container,
+.activity-container {
+  margin: 0 1em;
+}
+
+.member-container:nth-child(2),
+.member-container:nth-child(3),
+.member-container:nth-child(4),
+.activity-container:nth-child(2),
+.activity-container:nth-child(3),
+.activity-container:nth-child(4) {
+  border-bottom: rgba(211, 211, 211, 0.692) solid 1px;
+}
+
 .social-section,
 .widget-container-full,
 .widget-container-half,
-.member-container,
+.members,
+.activity,
 .message {
-  box-shadow: 0 2px 2px -2px gray;
+  border-bottom: rgba(211, 211, 211, 0.692) solid 1px;
 }
 
 /*------------------------
@@ -340,15 +360,21 @@ fieldset {
     display: grid;
     grid-template-columns: 50%;
   }
+
   .traffic-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-content: center;
   }
+
   .traffic-header h3 {
-    padding: 0;
-    margin: 0;
+    justify-content: center;
   }
+
+  .traffic-header fieldset {
+    width: 40%;
+  }
+
   .social-wrapper {
     display: flex;
   }
@@ -362,7 +388,6 @@ fieldset {
   .notification-wrapper {
     width: 60%;
   }
-
   .member-container,
   .activity-container {
     display: flex;
@@ -375,7 +400,6 @@ fieldset {
   .members-text p {
     text-align: left;
   }
-
   .traffic,
   .activity,
   .members {
