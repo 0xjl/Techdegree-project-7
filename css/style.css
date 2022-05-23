@@ -202,21 +202,17 @@ fieldset {
   text-decoration: none;
 }
 
-.member-activity {
-  display: flex;
-  flex-direction: column;
-}
-
-.member-activity p {
-  margin: 0;
-}
-
-.member-container {
+.member-container,
+.activity-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 1em;
+}
+
+.member-container p {
+  margin: 0;
 }
 
 .profile-image {
@@ -228,6 +224,10 @@ fieldset {
 .members-text p {
   margin: 0;
   text-align: center;
+}
+
+.arrow {
+  display: none;
 }
 
 /*------------------------
@@ -324,18 +324,10 @@ fieldset {
         MEDIA QUERIES
 -------------------------*/
 @media (min-width: 768px) {
-  .newMembers,
-  .activity {
-    flex: 50%;
-  }
-  .traffic {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
   nav {
     flex-direction: column;
     justify-content: start;
+    width: 60px;
   }
   .grid-container {
     display: grid;
@@ -344,10 +336,68 @@ fieldset {
       "header header"
       "nav main";
   }
-  nav {
-    width: 60px;
+  main {
+    display: grid;
+    grid-template-columns: 50%;
+  }
+  .traffic-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .traffic-header h3 {
+    padding: 0;
+    margin: 0;
+  }
+  .social-wrapper {
+    display: flex;
+  }
+  .social-container {
+    margin: 5px;
+  }
+  .arrow {
+    display: flex;
+    font-size: 2em;
+  }
+  .notification-wrapper {
+    width: 60%;
+  }
+
+  .member-container,
+  .activity-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .member-container p,
+  .arrow {
+    margin-left: auto;
+  }
+  .members-text p {
+    text-align: left;
+  }
+
+  .traffic,
+  .activity,
+  .members {
+    grid-column: 1 / span 2;
+  }
+  .daily {
+    grid-column: 1 / span 1;
+  }
+  .social-section,
+  .message,
+  .settings {
+    grid-column: 1 / span 2;
   }
 }
 
 @media (min-width: 1024px) {
+  .members,
+  .message {
+    grid-column: 1 / span 1;
+  }
+  .activity,
+  .settings {
+    grid-column: 2 / span 1;
+  }
 }
