@@ -106,7 +106,7 @@ nav svg:hover {
   font-weight: 300;
   width: calc(90% - 10px);
   margin: 0 auto;
-  padding: 7px;
+  padding: 10px;
   margin-top: 1em;
   border-radius: 5px;
   background-color: #7477bf;
@@ -194,15 +194,18 @@ fieldset {
   margin: 0 1em;
 }
 
+.mobile,
+.settings,
+.activity {
+  border-left: rgba(211, 211, 211, 0.692) solid 1px;
+}
+
 .member-container:nth-child(2),
 .member-container:nth-child(3),
 .member-container:nth-child(4),
 .activity-container:nth-child(2),
 .activity-container:nth-child(3),
-.activity-container:nth-child(4) {
-  border-bottom: rgba(211, 211, 211, 0.692) solid 1px;
-}
-
+.activity-container:nth-child(4),
 .social-section,
 .widget-container-full,
 .widget-container-half,
@@ -264,9 +267,8 @@ fieldset {
 .message-form * {
   font-weight: 300;
   padding: 1em;
-  margin: 5px;
-  border-radius: 10px;
-  box-shadow: none;
+  margin: 1em 5px 0 5px;
+  border-radius: 5px;
   border: 1px solid rgba(110, 110, 110, 0.089);
 }
 
@@ -274,19 +276,26 @@ fieldset {
   padding-bottom: 5em;
 }
 
+.form-field {
+  color: gray;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
 .form-area,
 .form-field {
-  background-color: rgba(175, 175, 175, 0.205);
+  background-color: rgba(211, 211, 211, 0.24);
 }
 
 .button-primary {
+  margin-bottom: 1em;
   background-color: #7477bf;
   color: white;
   border: none;
 }
 
 /*------------------------
-        MESSAGE FORM
+        SETTINGS
 -------------------------*/
 
 .settings {
@@ -297,7 +306,7 @@ fieldset {
 .notification-wrapper {
   display: flex;
   align-items: center;
-  padding: 1em;
+  margin: 1em 1em 0 1em;
 }
 
 .notification-wrapper label {
@@ -305,13 +314,19 @@ fieldset {
 }
 
 .notification-wrapper p {
-  flex: 2;
+  font-size: 1.05em;
+  flex: 3;
 }
 
-.settings .form-field {
-  border-radius: 10px;
+.settings .form-field,
+.dropdown {
+  border-radius: 5px;
   padding: 1em;
-  margin: 0 1em;
+  margin: 1em 1em 0 1em;
+}
+
+.dropdown {
+  margin-top: auto;
 }
 
 .settings-button {
@@ -321,7 +336,7 @@ fieldset {
 
 .settings-button * {
   font-weight: 300;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 1em;
   margin: 1em;
   flex: 1;
@@ -386,7 +401,7 @@ fieldset {
     font-size: 2em;
   }
   .notification-wrapper {
-    width: 60%;
+    width: 45%;
   }
   .member-container,
   .activity-container {
@@ -423,5 +438,8 @@ fieldset {
   .activity,
   .settings {
     grid-column: 2 / span 1;
+  }
+  .notification-wrapper {
+    width: 60%;
   }
 }
