@@ -130,7 +130,7 @@ fieldset {
 
 .widget-container-full,
 .widget-container-half {
-  height: 150px;
+  display: flex;
   padding: 1em;
 }
 
@@ -362,8 +362,9 @@ fieldset {
   nav {
     flex-direction: column;
     justify-content: start;
-    width: 60px;
+    width: 70px;
   }
+
   .grid-container {
     display: grid;
     grid-template-columns: 70px 1fr;
@@ -385,11 +386,9 @@ fieldset {
   .traffic-header h3 {
     justify-content: center;
   }
-
   .traffic-header fieldset {
     width: 40%;
   }
-
   .social-wrapper {
     display: flex;
   }
