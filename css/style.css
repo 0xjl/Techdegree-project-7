@@ -31,6 +31,28 @@ h4 {
   font-weight: 200;
 }
 
+.notificationsDropdown {
+  display: none;
+  height: auto;
+  width: auto;
+  position: absolute;
+  background-color: #7477bf;
+  border: 5px solid #4d4c72;
+  list-style: none;
+  font-size: 0.8em;
+  z-index: 10;
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+  margin: 45px 5px 0 0;
+}
+
+li {
+  padding: 1em;
+}
+
 /*------------------------
            HEADER
 -------------------------*/
@@ -58,9 +80,21 @@ header h1 {
   border-right: rgba(211, 211, 211, 0.3) solid 1px;
 }
 
+.bell-container svg:hover {
+  animation: pulse 0.4s backwards;
+}
+
 header img {
   height: 35px;
   width: 35px;
+  border-radius: 50%;
+}
+
+#notifications {
+  width: 5px;
+  height: 5px;
+  background-color: lightgreen;
+  margin-left: auto;
   border-radius: 50%;
 }
 
@@ -362,7 +396,6 @@ fieldset {
   nav {
     flex-direction: column;
     justify-content: start;
-    width: 70px;
   }
 
   .grid-container {
