@@ -311,17 +311,19 @@ fieldset {
 }
 
 #result {
-  overflow-y: visible;
+  position: absolute;
   height: auto;
-  margin: 0;
+  width: auto;
+  margin-top: 70px;
+  text-align: center;
   padding: 0;
   border: 0;
   list-style: none;
+  background-color: lightgray;
 }
 
 #result li {
   border: 0;
-  text-align: center;
   padding: 0;
   margin: 0;
 }
