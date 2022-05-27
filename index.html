@@ -69,12 +69,14 @@
     </nav>
 
     <main>
+
         <div class="main-header">
             <h2>Dashboard</h2>
             <div class="greybox"></div>
         </div>
+
         <!--charts start-->
-        <section class="traffic">
+        <section class="traffic" id="chart">
             <div class="alert">
                 Alert: You have unread messages
                 <span class="close">x</span>
@@ -161,7 +163,7 @@
                 </div>
             </div>
         </section>
-        <section class="members">
+        <section class="members" id="members">
             <h3>New Members</h3>
             <div class="member-container">
                 <img src="images/member-1.jpg" class="profile-image">
@@ -239,12 +241,12 @@
                 <button class="button-primary" id="send">Send</button>
             </form>
         </section>
-        <section class="settings">
+        <section class="settings" id="settings">
             <h3>Settings</h3>
             <div class="notification-wrapper">
                 <p>Send Email Notifications</p>
                 <label class="switch-light switch-ios">
-                    <input type="checkbox" id="email">
+                    <input type="checkbox" id="email" checked>
                     <span>
                         <span>Off</span>
                         <span>On</span>
@@ -253,11 +255,9 @@
                 </label>
             </div>
             <div class="notification-wrapper">
-                <p>
-                    Set Profile to Public
-                </p>
+                <p>Set Profile to Public</p>
                 <label class="switch-light switch-ios">
-                    <input type="checkbox" id="public">
+                    <input type="checkbox" id="public" checked>
                     <span>
                         <span>Off</span>
                         <span>On</span>

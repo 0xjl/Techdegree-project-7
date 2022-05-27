@@ -1,5 +1,5 @@
 const closeButton = document.querySelector(".close");
-const alert = document.querySelector(".alert");
+const alertBox = document.querySelector(".alert");
 const line = document.getElementById("line").getContext("2d");
 const bar = document.getElementById("bar").getContext("2d");
 const doughnut = document.getElementById("doughnut").getContext("2d");
@@ -11,29 +11,17 @@ const user = document.getElementById("userField");
 const message = document.getElementById("messageField");
 const send = document.getElementById("send");
 
-/* LOCAL STORAGE */
-const save = document.getElementById("save");
-const email = document.getElementById("email");
-const public = document.getElementById("public");
-const timezone = document.getElementById("timezone");
-
-save.addEventListener("click", () => {
-  console.log(email.checked);
-  console.log(public.checked);
-  console.log(timezone.selected);
-});
-
 /* SEND MESSAGE */
 
 send.addEventListener("click", () => {
   if (user.value === "" && message.value === "") {
-    prompt("Please fill out user and message fields before sending");
+    alert("Please fill out user and message fields before sending");
   } else if (user.value === "") {
-    prompt("Please fill out user field before sending");
+    alert("Please fill out user field before sending");
   } else if (message.value === "") {
-    prompt("Please fill out message field before sending");
+    alert("Please fill out message field before sending");
   } else {
-    prompt(`Message successfully sent to: ${user.value}`);
+    alert(`Message successfully sent to: ${user.value}`);
   }
 });
 
@@ -45,8 +33,8 @@ bell.addEventListener("click", () => {
 
 /* ALERT NOTIFICATION */
 closeButton.addEventListener("click", () => {
-  alert.style.visibility = "hidden";
-  alert.style.display = "none";
+  alertBox.style.visibility = "hidden";
+  alertBox.style.display = "none";
 });
 
 let trafficOptions = {
