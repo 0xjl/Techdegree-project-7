@@ -16,13 +16,13 @@ const send = document.getElementById("send");
 
 send.addEventListener("click", () => {
   if (user.value === "" && message.value === "") {
-    alert("Please fill out user and message fields before sending");
+    prompt("Please fill out user and message fields before sending");
   } else if (user.value === "") {
-    alert("Please fill out user field before sending");
+    prompt("Please fill out user field before sending");
   } else if (message.value === "") {
-    alert("Please fill out message field before sending");
+    prompt("Please fill out message field before sending");
   } else {
-    alert(`Message successfully sent to: ${user.value}`);
+    prompt(`Message successfully sent to: ${user.value}`);
   }
 });
 
@@ -33,7 +33,7 @@ searchInput.addEventListener("input", (e) => {
   let searchArray = [];
   if (e.target.value) {
     searchArray = searchables.filter((input) =>
-      input.toLocaleLowerCase().includes(e.target.value)
+      input.toLowerCase().includes(e.target.value)
     );
     searchArray = searchArray.map((input) => `<li>${input}</li>`);
   }

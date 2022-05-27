@@ -311,7 +311,7 @@ fieldset {
 }
 
 #result {
-  overflow-y: auto;
+  overflow-y: visible;
   height: auto;
   margin: 0;
   padding: 0;
