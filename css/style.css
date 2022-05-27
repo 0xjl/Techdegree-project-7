@@ -34,7 +34,7 @@ h4 {
 .notificationsDropdown {
   display: none;
   height: auto;
-  width: auto;
+  width: 150px;
   position: absolute;
   background-color: #7477bf;
   border: 5px solid #4d4c72;
@@ -86,6 +86,7 @@ header h1 {
 
 .bell-container svg:hover {
   animation: pulse 0.4s backwards;
+  cursor: pointer;
 }
 
 header img {
