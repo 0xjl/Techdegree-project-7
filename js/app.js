@@ -7,25 +7,48 @@ const toggleData = document.querySelector(".toggle");
 const bell = document.querySelector(".bell-container");
 const notification = document.querySelector("#notifications");
 const dropdown = document.querySelector(".notificationsDropdown");
-const input = document.querySelector(".form-field");
+const searchInput = document.querySelector(".form-field");
 
-const searchables = [
-  "victoria chambers",
-  "dale byrd",
-  "dawn wood",
-  "dan oliver",
-];
+/* OH HELP ME GOD */
+const user = document.getElementById("userField");
+const message = document.getElementById("messageField");
+const send = document.getElementById("send");
 
-input.addEventListener("keyup", (e) => {
-  let input = e.target.value;
-  if (searchables.includes(input) === true) {
-    console.log("YES");
+send.addEventListener("click", () => {
+  if (user.value === "" && message.value === "") {
+    alert("Please fill out user and message fields before sending");
+  } else if (user.value === "") {
+    alert("Please fill out user field before sending");
+  } else if (message.value === "") {
+    alert("Please fill out message field before sending");
+  } else {
+    alert(`Message successfully sent to: ${user.value}`);
   }
 });
+
+/* AUTO COMPLETE */
+let searchables = ["victoria chambers", "dale byrd", "dawn wood", "dan oliver"];
+
+searchInput.addEventListener("input", (e) => {
+  let searchArray = [];
+  if (e.target.value) {
+    searchArray = searchables.filter((input) =>
+      input.toLocaleLowerCase().includes(e.target.value)
+    );
+    searchArray = searchArray.map((input) => `<li>${input}</li>`);
+  }
+  displaySearchInput(searchArray);
+});
+
+function displaySearchInput(searchArray) {
+  const html = !searchArray.length ? "" : searchArray.join("");
+  document.querySelector("#result").innerHTML = html;
+}
 
 /* NOTIFICATIONS DROPDOWN */
 bell.addEventListener("click", () => {
   dropdown.classList.toggle("show");
+  notification.classList.toggle("hidden");
 });
 
 /* ALERT NOTIFICATION */

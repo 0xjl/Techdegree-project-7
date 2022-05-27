@@ -49,6 +49,10 @@ h4 {
   margin: 45px 5px 0 0;
 }
 
+.hidden {
+  display: none;
+}
+
 li {
   padding: 1em;
 }
@@ -298,12 +302,28 @@ fieldset {
   width: calc(95% - 10px);
 }
 
-.message-form * {
+.message-form > * {
   font-weight: 300;
   padding: 1em;
   margin: 1em 5px 0 5px;
   border-radius: 5px;
   border: 1px solid rgba(110, 110, 110, 0.089);
+}
+
+#result {
+  overflow-y: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+}
+
+#result li {
+  border: 0;
+  text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
 .form-area {
